@@ -36,6 +36,9 @@ namespace Clock
 
         private void init()
         {
+            //如果窗体被最小化，则pictureBox1.Width会小于0
+            if (pictureBox1.Width <= 0 || pictureBox1.Height <= 0) return;
+
             buffer = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             pictureBox1.Image = buffer;
             borderPen.Width = 2;

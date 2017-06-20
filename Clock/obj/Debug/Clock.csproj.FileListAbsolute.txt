@@ -7,3 +7,12 @@ D:\DEV\Clock\Clock\obj\Debug\Clock.Properties.Resources.resources
 D:\DEV\Clock\Clock\obj\Debug\Clock.csproj.GenerateResource.Cache
 D:\DEV\Clock\Clock\obj\Debug\Clock.exe
 D:\DEV\Clock\Clock\obj\Debug\Clock.pdb
+E:\Git\Clock\Clock\bin\Debug\Clock.exe.config
+E:\Git\Clock\Clock\obj\Debug\Clock.exe
+E:\Git\Clock\Clock\obj\Debug\Clock.pdb
+E:\Git\Clock\Clock\bin\Debug\Clock.exe
+E:\Git\Clock\Clock\bin\Debug\Clock.pdb
+E:\Git\Clock\Clock\obj\Debug\Clock.csprojResolveAssemblyReference.cache
+E:\Git\Clock\Clock\obj\Debug\Clock.mainForm.resources
+E:\Git\Clock\Clock\obj\Debug\Clock.Properties.Resources.resources
+E:\Git\Clock\Clock\obj\Debug\Clock.csproj.GenerateResource.Cache
