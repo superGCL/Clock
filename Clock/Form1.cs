@@ -95,9 +95,15 @@ namespace Clock
                 g.TranslateTransform(-panelWidth / 2, -panelHeight / 2);
             }
 
+            //获取当前时间
+            int hour = DateTime.Now.Hour; //[1,12]
+            int minute = DateTime.Now.Minute; //[1,60]
+            int second = DateTime.Now.Second; //[1,60]
+            int millsecond = DateTime.Now.Millisecond; //[0,1000]
+
             //画时针
-            int hour = DateTime.Now.Hour;
             float angle = (hour % 12) / 12.0f * 360;
+            angle += (float)(0.5 * minute);
 
             //旋转角度至合适的位置，以便画出时针
             g.TranslateTransform(panelWidth / 2, panelHeight / 2);
@@ -113,8 +119,8 @@ namespace Clock
             g.TranslateTransform(-panelWidth / 2, -panelHeight / 2);
 
             //画分针
-            int minute = DateTime.Now.Minute;
             angle = (minute % 60) / 60.0f * 360;
+            angle += (float)(0.1 * second);
 
             //旋转角度至合适的位置，以便画出分针
             g.TranslateTransform(panelWidth / 2, panelHeight / 2);
@@ -130,8 +136,8 @@ namespace Clock
             g.TranslateTransform(-panelWidth / 2, -panelHeight / 2);
 
             //画秒针
-            int second = DateTime.Now.Second;
             angle = (second % 60) / 60.0f * 360;
+            angle += (float)(0.006 * millsecond);
 
             //旋转角度至合适的位置，以便画出秒针
             g.TranslateTransform(panelWidth / 2, panelHeight / 2);
